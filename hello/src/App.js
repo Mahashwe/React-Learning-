@@ -16,12 +16,14 @@ import ClickCounter from './components/ClickCounter';
 import CompoA from './components/CompoA';
 import { UserProvider } from './components/context';
 import PostList from './components/postlist';
+import Postform from './components/postform';
 
 function App() {
   return (
 
     <div className="App">
-      <PostList />
+      <Postform />
+      {/* <PostList /> */}
       {/* <UserProvider value="maha">
         <CompoA />
       </UserProvider> */}
