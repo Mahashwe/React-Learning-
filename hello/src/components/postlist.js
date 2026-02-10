@@ -7,11 +7,12 @@ class PostList extends Component {
 
         this.state = {
             posts: [],
+            errormsg: ''
         }
     }
 
     componentDidMount() {
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        axios.get('https://jsonplaceholder.typicode.com/posts1')
             .then(response => {
                 console.log(response)
                 this.setState({ posts: response.data })
@@ -19,16 +20,20 @@ class PostList extends Component {
             })
             .catch(error => {
                 console.log(error)
+                this.setState({ errormsg: "Error fetching data" })
             })
     }
 
     render() {
-        const { posts } = this.state
+        const { posts, errormsg } = this.state
         return (
-            <div>List of Post{
-                posts.length ?
-                    posts.map(post => <div key={post.id}>{post.title}</div>) : null}</div>
-
+            <div>
+                <div>List of Posts
+                    {posts.length ?
+                        posts.map(post => <div key={post.id}>{post.title}</div>) : null}
+                </div>
+                {errormsg ? <div>{errormsg}</div> : null}
+            </div>
         )
     }
 }
