@@ -10,11 +10,19 @@ import Forms from './components/forms';
 import Lifecycle_a from './components/lifecycle_a';
 import Refs from './components/Refs';
 import Portal from './components/portal';
+import Error from './components/error';
+import ErrorBoundary from './components/ErrorBoundary';
 function App() {
   return (
 
     <div className="App">
-      <Portal />
+      <ErrorBoundary>
+        <Error heroname="batman" />
+      </ErrorBoundary>
+      <ErrorBoundary>
+        <Error heroname="joker" />
+      </ErrorBoundary>
+      {/* <Portal /> */}
       {/* <Refs /> */}
       {/* <Lifecycle_a /> */}
       {/* <Forms /> */}

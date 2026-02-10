@@ -1,13 +1,13 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+// import React from 'react'
+// import ReactDOM from 'react-dom'
 
-function Portal() {
-    return ReactDOM.createPortal(
-        <div>
-            <h1> NEW Portal</h1>
-        </div>,
-        document.getElementById('myPortal')
-    )
-}
+// function Portal() {
+//     return ReactDOM.createPortal(
+//         <div>
+//             <h1> NEW Portal</h1>
+//         </div>,
+//         document.getElementById('myPortal')
+//     )
+// }
 
-export default Portal
+// export default Portal
