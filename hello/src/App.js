@@ -9,11 +9,13 @@ import Style_learn from './components/style_learn';
 import Forms from './components/forms';
 import Lifecycle_a from './components/lifecycle_a';
 import Refs from './components/Refs';
+import Portal from './components/portal';
 function App() {
   return (
 
     <div className="App">
-      <Refs />
+      <Portal />
+      {/* <Refs /> */}
       {/* <Lifecycle_a /> */}
       {/* <Forms /> */}
       {/* <Style_learn /> */}
