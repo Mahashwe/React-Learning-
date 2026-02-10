@@ -13,18 +13,23 @@ import Portal from './components/portal';
 import Error from './components/error';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
+import CompoA from './components/CompoA';
+import { UserProvider } from './components/context';
 
 function App() {
   return (
 
     <div className="App">
-      <ClickCounter />
+      <UserProvider value="maha">
+        <CompoA />
+      </UserProvider>
+      {/* <ClickCounter /> */}
       {/* <ErrorBoundary>
         <Error heroname="batman" />
       </ErrorBoundary>
       <ErrorBoundary>
-        <Error heroname="joker" /> */}
-      {/* </ErrorBoundary> */}
+        <Error heroname="joker" />
+      </ErrorBoundary>
       {/* <Portal /> */}
       {/* <Refs /> */}
       {/* <Lifecycle_a /> */}
