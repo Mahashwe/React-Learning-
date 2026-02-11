@@ -1,14 +1,15 @@
-import React, { Component } from 'react'
+import React, { useContext } from 'react'
 import CompoC from './CompoC'
+import { user, channel } from '../App'
 
-class CompoB extends Component {
-    render() {
-        return (
-            <div>
-                <CompoC />
-            </div>
-        )
-    }
+function CompoB() {
+    const userName = useContext(user)
+    const channelName = useContext(channel)
+    return (
+        <div>
+            {userName} - {channelName}
+        </div>
+    )
 }
 
 export default CompoB
