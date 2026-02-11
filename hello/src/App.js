@@ -22,13 +22,17 @@ import Hookcounter from './components/hookcounter';
 import Hookcounter2 from './hookcounter2';
 import Hookcounter3 from './components/hookcounter3';
 import Hook from './components/hook';
+import Hookmouse from './components/hookmouse';
+import Timer from './components/timer';
 
 function App() {
   return (
 
     <div className="App">
+      <Timer />
+      {/* <Hookmouse /> */}
       {/* <Hookcounter3 /> */}
-      <Hook />
+      {/* <Hook /> */}
       {/* <ClassCounter /> */}
       {/* <Postform /> */}
       {/* <PostList /> */}
