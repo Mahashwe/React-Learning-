@@ -24,7 +24,7 @@ import Hookcounter3 from './components/hookcounter3';
 import Hook from './components/hook';
 import Hookmouse from './components/hookmouse';
 import Timer from './components/timer';
-import DataFetch from './datafetch';
+import Data from './components/datafetch1';
 import Counternew from './components/reducer';
 import Trail from './components/trail';
 import React from 'react';
@@ -36,6 +36,7 @@ function App() {
   return (
 
     <div className="App">
+      <Data />
       {/* <Counternew /> */}
       {/* <DataFetch /> */}
       {/* <Timer /> */}
@@ -43,7 +44,7 @@ function App() {
       {/* <Hookcounter3 /> */}
       {/* <Hook /> */}
       {/* <ClassCounter /> */}
-      <Trail />
+      {/* <Trail /> */}
       {/* <Postform /> */}
       {/* <PostList /> */}
       {/* <user.Provider value="maha">
